@@ -5,27 +5,36 @@ using RootMotion.Dynamics;
 
 public class MovePhysick : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _limbPlayerMove;
+    [SerializeField] private Rigidbody _limbMove;
     [SerializeField] private Animator _animator;
     [SerializeField] private MoveArrowPosition _arrow;
-    [SerializeField] private Transform _armatura;
-    [SerializeField] private float _forseDoll;
+    [SerializeField] private Transform _hips;
     [SerializeField] private float _timerForForseDoll;
 
+    private float _forseDoll = 0;
     private float _pastTime;
     private Vector2 _diraction;
 
     private void Update()
     {
+        _arrow.transform.position = _hips.position;
+        
+        _forseDoll = Mathf.Lerp(500, 2500, _arrow.DiractionForPlayer.magnitude);
+        Debug.Log(_arrow.DiractionForPlayer.magnitude);
+        Debug.Log(_forseDoll);
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            OffAnimatorPlayer();
-            _pastTime = 0;
+            Time.timeScale = 0.5f;
+            OnRegdoll();
+            _pastTime = _timerForForseDoll++;
             _arrow.gameObject.SetActive(true);
 
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
+            Time.timeScale = 1f;
+            _pastTime = 0;
             _diraction = _arrow.DiractionForPlayer.normalized;
             _arrow.gameObject.SetActive(false);
         }
@@ -41,12 +50,15 @@ public class MovePhysick : MonoBehaviour
         if (_pastTime <= _timerForForseDoll)
         {
             _pastTime++;
-            _limbPlayerMove.AddForce(new Vector3(_diraction.x, _diraction.y, 0) * _forseDoll);
+            _limbMove.AddForce(new Vector3(_diraction.x, _diraction.y, 0) * _forseDoll);
         }
     }
 
-    private void OffAnimatorPlayer()
+    private void OnRegdoll()
     {
         _animator.enabled = false;
+        _hips.SetParent(null);
+        transform.SetParent(_hips);
+        _limbMove.isKinematic = false;
     }
 }

@@ -30,8 +30,6 @@ public class MoveArrowPosition : MonoBehaviour
         DiractionForPlayer = diraction;
         _angle = Mathf.Atan2(diraction.y, diraction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, _angle-90);
-
-        Debug.Log(DiractionForPlayer.magnitude);
         
         _main.localScale = new Vector3(0.2f, DiractionForPlayer.magnitude, 0);
 
