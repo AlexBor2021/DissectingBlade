@@ -19,10 +19,7 @@ public class MovePhysick : MonoBehaviour
 
     private void Update()
     {
-        _arrow.transform.position = _hips.position;
-        float forse = Mathf.InverseLerp(2f, 6f, _arrow.DiractionForPlayer.magnitude);
-        _forseDoll = Mathf.Lerp(_minForse, _maxForse, forse);
-       
+        SetForse();
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -61,5 +58,11 @@ public class MovePhysick : MonoBehaviour
         _hips.SetParent(null);
         transform.SetParent(_hips);
         _limbMove.isKinematic = false;
+    }
+
+    private void SetForse()
+    {
+        float forse = Mathf.InverseLerp(2f, 6f, _arrow.DiractionForPlayer.magnitude);
+        _forseDoll = Mathf.Lerp(_minForse, _maxForse, forse);
     }
 }
