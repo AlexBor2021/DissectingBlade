@@ -33,14 +33,12 @@ public class MovePhysick : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("GetKeyDown");
             _pastTime = 0;
             _arrow.gameObject.SetActive(true);
 
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            Debug.Log("GetKeyUp");
             transform.rotation = Quaternion.Euler(0, 0, _arrow.AngleRotate - 90);
             ChekOnWall();
             _arrow.gameObject.SetActive(false);
