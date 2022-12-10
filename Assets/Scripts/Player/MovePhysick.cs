@@ -11,17 +11,18 @@ public class MovePhysick : MonoBehaviour
     [SerializeField] private Transform _hips;
     [SerializeField] private float _timerForForseDoll;
 
-    private float _forseDoll = 0;
+    private float _forseDoll;
+    private float _maxForse = 2500;
+    private float _minForse = 500;
     private float _pastTime;
     private Vector2 _diraction;
 
     private void Update()
     {
         _arrow.transform.position = _hips.position;
-        
-        _forseDoll = Mathf.Lerp(500, 2500, _arrow.DiractionForPlayer.magnitude);
-        Debug.Log(_arrow.DiractionForPlayer.magnitude);
-        Debug.Log(_forseDoll);
+        float forse = Mathf.InverseLerp(2f, 6f, _arrow.DiractionForPlayer.magnitude);
+        _forseDoll = Mathf.Lerp(_minForse, _maxForse, forse);
+       
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {

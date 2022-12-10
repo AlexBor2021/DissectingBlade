@@ -1718,6 +1718,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509978758}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &560702966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4911392926587501388, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+  m_PrefabInstance: {fileID: 532014164322975603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &561626539
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,13 +7106,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4873594795140765977, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+      propertyPath: _hips
+      value: 
+      objectReference: {fileID: 5694996306838137114}
+    - target: {fileID: 4873594795140765977, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
       propertyPath: _player
       value: 
+      objectReference: {fileID: 560702966}
+    - target: {fileID: 4873594795140765977, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+      propertyPath: _limbMove
+      value: 
+      objectReference: {fileID: 5694996306838137118}
+    - target: {fileID: 4873594796748476146, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4873594796748476147, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 4873594796991790508, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4911392926587501388, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -7161,5 +7182,10 @@ PrefabInstance:
 --- !u!4 &5694996306838137114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218168832476960361, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
+  m_PrefabInstance: {fileID: 532014164322975603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &5694996306838137118 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4873594796991790508, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
   m_PrefabInstance: {fileID: 532014164322975603}
   m_PrefabAsset: {fileID: 0}
