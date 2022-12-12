@@ -12,7 +12,7 @@ public class MovePhysick : MonoBehaviour
     [SerializeField] private float _timerForForseDoll;
 
     private float _forseDoll;
-    private float _maxForse = 2500;
+    private float _maxForse = 2000;
     private float _minForse = 500;
     private float _pastTime;
     private Vector2 _diraction;
@@ -25,7 +25,7 @@ public class MovePhysick : MonoBehaviour
         {
             Time.timeScale = 0.5f;
             OnRegdoll();
-            _pastTime = _timerForForseDoll++;
+            _pastTime = _timerForForseDoll;
             _arrow.gameObject.SetActive(true);
 
         }
