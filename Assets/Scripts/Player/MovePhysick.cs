@@ -19,7 +19,7 @@ public class MovePhysick : MonoBehaviour
 
     private void Update()
     {
-        SetForse();
+        SetForse(); 
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {

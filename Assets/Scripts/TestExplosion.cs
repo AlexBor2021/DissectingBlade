@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TestExplosion : MonoBehaviour
 {
-    [SerializeField] private DestroyWall destroyWall;
+    [SerializeField] private DestroyObject destroyWall;
     
-    private DestroyWall test;
+    private DestroyObject test;
    
     private void Update()
     {
