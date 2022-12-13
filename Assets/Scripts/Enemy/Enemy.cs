@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Material _dieMatirial;
     [SerializeField] private PuppetMaster _puppetMasterSettings;
     [SerializeField] private List<GameObject> _limbs;
+    [SerializeField] private Pointer _pointer;
     
     private const string _offEnemy = "OffEnemy";
     private int _numberLayerEnemy = 3;
@@ -29,6 +30,7 @@ public class Enemy : MonoBehaviour
 
     private void OffEnemy()
     {
+        _pointer.DeletePointer();
         gameObject.SetActive(false);
     }
 }

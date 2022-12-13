@@ -919,8 +919,8 @@ GameObject:
   - component: {fileID: 2751729575497942941}
   - component: {fileID: 4332364610925560537}
   - component: {fileID: -7474170233231889990}
-  - component: {fileID: 2171140123640909382}
   - component: {fileID: -8307446187391057954}
+  - component: {fileID: 2171140123640909382}
   m_Layer: 3
   m_Name: 'Enemy '
   m_TagString: Untagged
@@ -974,6 +974,7 @@ MonoBehaviour:
   - {fileID: 1671447874026240101}
   - {fileID: 3987459425461737140}
   - {fileID: 4193907321223143370}
+  _pointer: {fileID: -8307446187391057954}
   IsDie: 0
 --- !u!114 &-7474170233231889990
 MonoBehaviour:
@@ -991,19 +992,6 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 1
---- !u!135 &2171140123640909382
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2751729575497942940}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 5.6843433
-  m_Center: {x: 0.03375435, y: 1.4801502, z: 0}
 --- !u!114 &-8307446187391057954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,6 +1005,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndexSpriteCurrent: 0
+--- !u!135 &2171140123640909382
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751729575497942940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5.6843433
+  m_Center: {x: 0.03375435, y: 1.4801502, z: 0}
 --- !u!1 &2751729575614236291
 GameObject:
   m_ObjectHideFlags: 0

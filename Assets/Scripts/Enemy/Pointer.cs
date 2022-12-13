@@ -17,4 +17,9 @@ public class Pointer : MonoBehaviour
     {
         PointerManager.Instance.AddToList(this);
     }
+
+    public void DeletePointer()
+    {
+        PointerManager.Instance.RemoveToList(this);
+    }
 }
