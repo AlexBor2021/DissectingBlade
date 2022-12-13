@@ -17,7 +17,4 @@ public class Pointer : MonoBehaviour
     {
         PointerManager.Instance.AddToList(this);
     }
-
-    
-
 }

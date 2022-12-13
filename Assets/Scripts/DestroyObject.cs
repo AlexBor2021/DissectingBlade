@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestroyWall : MonoBehaviour
+public class DestroyObject : MonoBehaviour
 {
     [SerializeField] private float _radius;
     [SerializeField] private float _forseExplosion;
@@ -19,7 +19,7 @@ public class DestroyWall : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
+        if (other.TryGetComponent<Weapon>(out Weapon weapon) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
         {
             Explosion();
         }
