@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4873594795000332937}
   - component: {fileID: 4873594795000332936}
   - component: {fileID: 413482531}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 4873594796655329108}
   - component: {fileID: 4873594796655329107}
   - component: {fileID: 162873902}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2238,7 +2238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5152884313404047436}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2560,7 +2560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2641277068673404789}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2592,7 +2592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1039022060537165815}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LeftHand_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}

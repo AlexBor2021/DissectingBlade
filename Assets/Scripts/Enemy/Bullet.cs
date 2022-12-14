@@ -6,21 +6,16 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
-    private Renderer _renderer;
-
-    private void Start()
+    private Vector3 _target;
+    public void SetDirection(Vector3 direction)
     {
-        _renderer = GetComponent<Renderer>();
+        _target = direction;
+        
     }
 
     private void Update()
     {
-        transform.Translate(Vector2.left * _speed * Time.deltaTime, Space.World);
-
-        if (!_renderer.isVisible)
-        {
-            Destroy(gameObject);
-        }
+      transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)

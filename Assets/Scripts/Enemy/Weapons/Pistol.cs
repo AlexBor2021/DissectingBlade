@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Pistol : Weapons
 {
-    public override void Shoot(Transform shootPoint)
+    public override void Shoot(Transform shootPoint, Vector3 target)
     {
-        Instantiate(Bullet, shootPoint.position, Quaternion.identity);
+        Bullet bullet =  Instantiate(Bullet, shootPoint.position, Quaternion.identity);
+        bullet.SetDirection(target);
     }
 }
