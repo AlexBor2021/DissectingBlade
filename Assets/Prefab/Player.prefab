@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5720439543126909430}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93d6e4ad275841d459651357194e11a9, type: 3}
   m_Name: 
@@ -2125,11 +2125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e296a43a345d04c92bc53e57e43c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _limbPlayerMove: {fileID: 4873594796991790508}
+  _limbMove: {fileID: 0}
   _animator: {fileID: 1353587929278112054}
   _arrow: {fileID: 4873594796748476147}
   _hips: {fileID: 0}
-  _forseDoll: 2500
   _timerForForseDoll: 20
 --- !u!1 &5720439543598749343
 GameObject:

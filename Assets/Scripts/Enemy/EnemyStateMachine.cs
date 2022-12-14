@@ -35,8 +35,10 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<LimbPlayer>())
+        if (other.GetComponent<LimbPlayer>())
         {
+            Debug.Log("Т№ру т nhbutht");
+
             _target = other.transform;
             IsStateAttack = true;
         }
@@ -44,7 +46,7 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<LimbPlayer>())
+        if (other.gameObject.GetComponent<Player>())
         {
             IsStateAttack = false;
             StateIdle();
@@ -69,7 +71,7 @@ public class EnemyStateMachine : MonoBehaviour
         {
             Debug.Log(hit.collider.name);
 
-            if (hit.collider.TryGetComponent(out LimbPlayer player))
+            if (hit.collider.TryGetComponent(out Player player))
             {
                 return true;
             }
