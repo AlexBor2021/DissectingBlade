@@ -10,7 +10,7 @@ public class Chest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Weapon>())
+        if (other.GetComponent<LimbPlayer>())
         {
             _animator.SetTrigger(_open);
         }

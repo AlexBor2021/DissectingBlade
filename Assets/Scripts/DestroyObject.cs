@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
@@ -6,16 +7,12 @@ public class DestroyObject : MonoBehaviour
     [SerializeField] private float _forseExplosion;
     [SerializeField] private GameObject _gameObjectNotDestroy;
     [SerializeField] private GameObject _gameObjectDestroy;
+    [SerializeField] private List<Rigidbody> _rigidbodiesDestroy;
     [SerializeField] private Transform _plaseExplosion;
+    [SerializeField] private bool _isBomb;
 
 
     private Collider[] _overlappedColiders;
-
-    private void Awake()
-    {
-        _overlappedColiders = Physics.OverlapSphere(_plaseExplosion.position, _radius);
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,16 +25,25 @@ public class DestroyObject : MonoBehaviour
     {
         _gameObjectNotDestroy.SetActive(false);
         _gameObjectDestroy.SetActive(true);
-        
-        foreach (var colider in _overlappedColiders)
+
+        _overlappedColiders = Physics.OverlapSphere(_plaseExplosion.position, _radius);
+
+        foreach (var rb in _rigidbodiesDestroy)
         {
-            Rigidbody rb = colider.attachedRigidbody;
-            
-            if (rb)
+            rb.AddExplosionForce(_forseExplosion, _plaseExplosion.position, _radius);
+        }
+
+        if (_isBomb)
+        {
+            foreach (var collider in _overlappedColiders)
             {
-                rb.AddExplosionForce(_forseExplosion, _plaseExplosion.position, _radius);
+                if (collider.TryGetComponent<Enemy>(out Enemy enemy))
+                {
+
+                }
             }
         }
+
         Invoke("OffObject", 3f);
     }
 
