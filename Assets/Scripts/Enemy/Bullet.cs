@@ -7,15 +7,15 @@ public class Bullet : MonoBehaviour
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
     private Vector3 _target;
-    public void SetDirection(Vector3 direction)
+    public void SetTarget(Vector3 target)
     {
-        _target = direction;
+        _target = target;
         
     }
 
     private void Update()
     {
-      transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
+      transform.position = transform.position + transform.forward * _speed * Time.deltaTime;
     }
 
     private void OnCollisionEnter(Collision collision)

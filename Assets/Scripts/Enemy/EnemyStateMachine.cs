@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Enemy))]
 public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private Weapons _currentWeapon;
@@ -10,21 +10,22 @@ public class EnemyStateMachine : MonoBehaviour
     private bool IsStateAttack = false;
     private float _lastAttackTime = 0;
     private Transform _target = null;
+    private Enemy _enemy;
+
+    private void Start()
+    {
+        _enemy = GetComponent<Enemy>();
+    }
+
     private void Update()
     {
         if (_lastAttackTime <= 0)
         {
 
-            if (IsStateAttack)
+            if (IsStateAttack && !_enemy.IsDie)
             {
-
-                if (CanSeeTarget(_currentWeapon.ShootPosition.position, _target.position))
-                {
-                    Debug.Log("Стрельба");
                     StateAttack();
                     _lastAttackTime = _currentWeapon.Delay;
-                }
-               
             }
 
         }
@@ -39,13 +40,6 @@ public class EnemyStateMachine : MonoBehaviour
 
             _target = other.transform;
             IsStateAttack = true;
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.GetComponent<LimbPlayer>())
-        {
-            _target = other.transform;
         }
     }
 
@@ -67,25 +61,5 @@ public class EnemyStateMachine : MonoBehaviour
     {
         _currentWeapon.Shoot(_currentWeapon.ShootPosition, _target.position);
     }
-
-    public bool CanSeeTarget(Vector3 direction, Vector3 origin)
-    {
-        RaycastHit hit;
-
-        if (Physics.Raycast(origin, direction, out hit, Mathf.Infinity, _layerMask))
-        {
-
-            if (hit.collider.TryGetComponent(out LimbPlayer player))
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawLine(_currentWeapon.ShootPosition.position, _target.position);
-    //}
+  
 }
