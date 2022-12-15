@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 4502754552577599103}
+  _pointer: {fileID: 599673715861130747}
 --- !u!114 &599673715861130747
 MonoBehaviour:
   m_ObjectHideFlags: 0
