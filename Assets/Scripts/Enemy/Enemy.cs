@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RootMotion.Dynamics;
-
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private SkinnedMeshRenderer _enemy;
@@ -15,7 +14,7 @@ public class Enemy : MonoBehaviour
     private int _numberLayerEnemy = 3;
 
     public bool IsDie;
-
+//
     public void EnemyDie()
     {
         _puppetMasterSettings.state = PuppetMaster.State.Dead;

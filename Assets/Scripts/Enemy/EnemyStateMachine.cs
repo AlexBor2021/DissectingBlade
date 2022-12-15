@@ -1,42 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Enemy))]
 public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private Weapons _currentWeapon;
     [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private float _rotationSpeed;
 
     private bool IsStateAttack = false;
     private float _lastAttackTime = 0;
-    private Transform _target;
+    private Transform _target = null;
+    private Enemy _enemy;
+
+    private void Start()
+    {
+        _enemy = GetComponent<Enemy>();
+    }
+
     private void Update()
     {
         if (_lastAttackTime <= 0)
         {
 
-            if (IsStateAttack)
+            if (IsStateAttack && !_enemy.IsDie)
             {
-                Debug.Log("Враг в зоне");
-
-                if (CanSeeTarget((_currentWeapon.ShootPosition.position - _target.position).normalized,_currentWeapon.ShootPosition.position))
-                {
-                    Debug.Log("Стрельба");
                     StateAttack();
-                    _lastAttackTime = _currentWeapon.Delay;
-                }
-               
-            }
 
+                    _lastAttackTime = _currentWeapon.Delay;
+            }
         }
         _lastAttackTime -= Time.deltaTime;
 
+        if (_target != null)
+        {
+            Vector3 diff = _target.transform.position - transform.position;
+
+            diff.Normalize();
+
+            float rot = Mathf.Atan2(diff.x, diff.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.RotateTowards(transform.rotation,
+                Quaternion.Euler(0, rot, 0), Time.deltaTime * _rotationSpeed);
+        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<LimbPlayer>())
+        if (other.GetComponent<LimbPlayer>())
         {
+
             _target = other.transform;
             IsStateAttack = true;
         }
@@ -53,28 +67,15 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void StateIdle()
     {
+        _animator.SetBool("Shoot", false);
 
     }
 
     private void StateAttack()
     {
-        _currentWeapon.Shoot(_currentWeapon.ShootPosition);
+
+        _animator.SetBool("Shoot", true);
+        _currentWeapon.Shoot(_currentWeapon.ShootPosition, _target.position);
     }
-
-    public bool CanSeeTarget(Vector3 direction, Vector3 origin)
-    {
-        RaycastHit hit;
-
-        if (Physics.Raycast(origin, direction, out hit, Mathf.Infinity, _layerMask))
-        {
-            Debug.Log(hit.collider.name);
-
-            if (hit.collider.TryGetComponent(out LimbPlayer player))
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
+  
 }
