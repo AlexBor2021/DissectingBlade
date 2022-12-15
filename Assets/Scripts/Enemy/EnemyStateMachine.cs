@@ -6,6 +6,8 @@ public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private Weapons _currentWeapon;
     [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private float _rotationSpeed;
 
     private bool IsStateAttack = false;
     private float _lastAttackTime = 0;
@@ -25,12 +27,23 @@ public class EnemyStateMachine : MonoBehaviour
             if (IsStateAttack && !_enemy.IsDie)
             {
                     StateAttack();
+
                     _lastAttackTime = _currentWeapon.Delay;
             }
-
         }
         _lastAttackTime -= Time.deltaTime;
 
+        if (_target != null)
+        {
+            Vector3 diff = _target.transform.position - transform.position;
+
+            diff.Normalize();
+
+            float rot = Mathf.Atan2(diff.x, diff.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.RotateTowards(transform.rotation,
+                Quaternion.Euler(0, rot, 0), Time.deltaTime * _rotationSpeed);
+        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,11 +67,14 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void StateIdle()
     {
+        _animator.SetBool("Shoot", false);
 
     }
 
     private void StateAttack()
     {
+
+        _animator.SetBool("Shoot", true);
         _currentWeapon.Shoot(_currentWeapon.ShootPosition, _target.position);
     }
   
