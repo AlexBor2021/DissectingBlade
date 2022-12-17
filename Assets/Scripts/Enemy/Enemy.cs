@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RootMotion.Dynamics;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour
     private const string _offEnemy = "OffEnemy";
     private int _numberLayerEnemy = 3;
 
+    public event UnityAction<Enemy> DiedEnemy;
     public bool IsDie;
 
     public void EnemyDie()
@@ -25,6 +27,7 @@ public class Enemy : MonoBehaviour
         }
         _enemy.material = _dieMatirial;
         IsDie = true;
+        DiedEnemy?.Invoke(this);
         Invoke(_offEnemy, 6f);
     }
 
