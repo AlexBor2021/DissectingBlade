@@ -25,6 +25,10 @@ public class Bullet : MonoBehaviour
             player.TakeDamage(_damage);
             Destroy(gameObject);
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 }
