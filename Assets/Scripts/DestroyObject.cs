@@ -39,7 +39,7 @@ public class DestroyObject : MonoBehaviour
             {
                 if (collider.TryGetComponent<Enemy>(out Enemy enemy))
                 {
-
+                    enemy.EnemyDie();
                 }
             }
         }
