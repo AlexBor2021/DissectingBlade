@@ -7,17 +7,15 @@ public class FinishIcon : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _countEnemy;
     [SerializeField] private TextMeshProUGUI _countBoss;
+    [SerializeField] private TextMeshProUGUI _coinCount;
     [SerializeField] private GameObject _enemyIcon;
+    [SerializeField] private GameObject _coinIcon;
     [SerializeField] private GameObject _bossIcon;
-    
     [SerializeField] private List<Animator> _animatorsStar;
 
     private int _numberSceneLevelMenu = 2;
-    private float _valueOneStar = 0.3f;
-    private float _valueTwoStars = 0.6f;
-    private float _valueThreeStars = 1f;
-
-    public void TakeInfo(float countEnemy, float countBoss, float excution)
+   
+    public void TakeInfo(float countEnemy, float countBoss,int revard, int countStars)
     {
         if (countEnemy > 0)
         {
@@ -31,7 +29,10 @@ public class FinishIcon : MonoBehaviour
             _countBoss.text = "x " + countBoss.ToString();
         }
 
-        SetStars(excution);
+        _coinIcon.SetActive(true);
+        _coinCount.text = "x " + revard.ToString();
+
+        SetStars(countStars);
     }
 
     public void LoadlevelMenu()
@@ -39,32 +40,11 @@ public class FinishIcon : MonoBehaviour
         SceneManager.LoadScene(_numberSceneLevelMenu);
     }
 
-    private void SetStars(float excution)
+    private void SetStars(int countStars)
     {
-        int numberStars;
-
-        if (excution >= _valueThreeStars)
-        {
-            numberStars = 3;
-        }
-        else if (excution >= _valueTwoStars)
-        {
-            numberStars = 2;
-        }
-        else if (excution >= _valueOneStar)
-        {
-            numberStars = 1;
-        }
-        else
-        {
-            numberStars = 0;
-        }
-
-
-        for (int i = 0; i < numberStars; i++)
+        for (int i = 0; i < countStars; i++)
         {
             _animatorsStar[i].enabled = true;
         }
-
     }
 }

@@ -14,7 +14,7 @@ public class ContainerEnemy : MonoBehaviour
 
     public float CountEnemyKill => _countEnemyKill;
     
-    public float CountBossAfter => _countBossKill;
+    public float CountBossKill => _countBossKill;
 
     private void OnEnable()
     {
@@ -27,10 +27,16 @@ public class ContainerEnemy : MonoBehaviour
         }
     }
 
-    public float ÑalculationOfExecution()
+    public bool ChekingOfExecution()
     {
-        float exution = _countEnemyKill/ _countEnemyBefore;
-        return  exution ;
+        if (_countEnemyKill == _countEnemyBefore && _countBossKill == _countBossBefore)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private void DeidEnemy(Enemy enemy)
