@@ -50,7 +50,6 @@ public class EnemyStateMachine : MonoBehaviour
     {
         if (other.GetComponent<LimbPlayer>())
         {
-
             _target = other.transform;
             IsStateAttack = true;
         }
