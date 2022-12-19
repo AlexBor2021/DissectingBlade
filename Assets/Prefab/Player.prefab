@@ -904,7 +904,6 @@ GameObject:
   - component: {fileID: 4873594796991790510}
   - component: {fileID: 4873594796991790509}
   - component: {fileID: 5694996306838137118}
-  - component: {fileID: 2067557589914297675}
   m_Layer: 8
   m_Name: Hips
   m_TagString: Untagged
@@ -1066,18 +1065,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fa905084e3b7e849b9515d3888f19ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2067557589914297675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2944339389743916621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93d6e4ad275841d459651357194e11a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3082559711636957865
@@ -2126,6 +2113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d6e4ad275841d459651357194e11a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _losePanel: {fileID: 0}
+  _maxHealth: 10
+  _armor: {fileID: 0}
 --- !u!114 &4873594795140765977
 MonoBehaviour:
   m_ObjectHideFlags: 0
