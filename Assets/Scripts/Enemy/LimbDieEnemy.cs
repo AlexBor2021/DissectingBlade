@@ -10,7 +10,7 @@ public class LimbDieEnemy : MonoBehaviour
     public void TearLimb()
     {
         _limbRoot.SetActive(false);
-        Instantiate(_prefabLimb, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
+        var limb = Instantiate(_prefabLimb, transform.position, Quaternion.identity);
     }
 }
