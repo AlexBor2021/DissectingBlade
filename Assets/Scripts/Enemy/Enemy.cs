@@ -11,14 +11,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] private PuppetMaster _puppetMasterSettings;
     [SerializeField] private List<GameObject> _limbs;
     [SerializeField] private Pointer _pointer;
+    [SerializeField] private DieEnemy _dieEnemy;
     
-    private const string _offEnemy = "OffEnemy";
     private int _numberLayerEnemy = 3;
 
     public event UnityAction<Enemy> DiedEnemy;
     public bool IsDie;
 
-    public void EnemyDie()
+    public void EnemyDie(int limbNum)
     {
         _puppetMasterSettings.state = PuppetMaster.State.Dead;
         foreach (var limb in _limbs)
@@ -28,12 +28,8 @@ public class Enemy : MonoBehaviour
         _enemy.material = _dieMatirial;
         IsDie = true;
         DiedEnemy?.Invoke(this);
-        Invoke(_offEnemy, 6f);
-    }
-
-    private void OffEnemy()
-    {
         _pointer.DeletePointer();
-        gameObject.SetActive(false);
+        Instantiate(_dieEnemy, transform.position, transform.rotation).TearLimb(limbNum);
+        Destroy(gameObject);
     }
 }

@@ -16,26 +16,35 @@ public class MovePhysick : MonoBehaviour
     private float _minForse = 500;
     private float _pastTime;
     private Vector2 _diraction;
+    
+    public bool ISMenu;
 
     private void Update()
     {
-        SetForse(); 
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (ISMenu == false)
         {
-            Time.timeScale = 0.5f;
-            OnRegdoll();
-            _pastTime = _timerForForseDoll;
-            _arrow.gameObject.SetActive(true);
+            SetForse();
 
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Time.timeScale = 0.5f;
+                OnRegdoll();
+                _pastTime = _timerForForseDoll;
+                _arrow.gameObject.SetActive(true);
+
+            }
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                Time.timeScale = 1f;
+                _pastTime = 0;
+                _diraction = _arrow.DiractionForPlayer.normalized;
+                _arrow.gameObject.SetActive(false);
+            }
         }
-        if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            Time.timeScale = 1f;
-            _pastTime = 0;
-            _diraction = _arrow.DiractionForPlayer.normalized;
+        else
+	    {
             _arrow.gameObject.SetActive(false);
-        }
+	    }
     }
 
     private void FixedUpdate()

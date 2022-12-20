@@ -39,7 +39,7 @@ public class TimerLelvel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
         {
             _isStartTimer = true;
         }

@@ -12,9 +12,19 @@ public class FinishIcon : MonoBehaviour
     [SerializeField] private GameObject _coinIcon;
     [SerializeField] private GameObject _bossIcon;
     [SerializeField] private List<Animator> _animatorsStar;
+    [SerializeField] private PauseGame _pauseGame;
 
     private int _numberSceneLevelMenu = 2;
-   
+
+    private void OnEnable()
+    {
+        _pauseGame.SetPause();
+    }
+    private void OnDisable()
+    {
+        _pauseGame.RemovePause();
+    }
+
     public void TakeInfo(float countEnemy, float countBoss,int revard, int countStars)
     {
         if (countEnemy > 0)

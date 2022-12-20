@@ -1,23 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-[RequireComponent(typeof(Enemy))]
 public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private Weapons _currentWeapon;
-    [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private Enemy _enemy;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _rotationSpeed;
 
     private bool IsStateAttack = false;
     private float _lastAttackTime = 0;
     private Transform _target = null;
-    private Enemy _enemy;
-
-    private void Start()
-    {
-        _enemy = GetComponent<Enemy>();
-    }
 
     private void Update()
     {
@@ -41,7 +32,7 @@ public class EnemyStateMachine : MonoBehaviour
 
             float rot = Mathf.Atan2(diff.x, diff.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.RotateTowards(transform.rotation,
-                Quaternion.Euler(0, rot, 0), Time.deltaTime * _rotationSpeed);
+            Quaternion.Euler(0, rot, 0), Time.deltaTime * _rotationSpeed);
         }
        
     }
@@ -67,7 +58,6 @@ public class EnemyStateMachine : MonoBehaviour
     private void StateIdle()
     {
         _animator.SetBool("Shoot", false);
-
     }
 
     private void StateAttack()
