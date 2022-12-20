@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6214571070665011358}
   - component: {fileID: 6316006416250835354}
   - component: {fileID: 7592423099546306061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8520180761709846969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -155,9 +155,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6231606045468624872}
     m_Modifications:
+    - target: {fileID: 2744452038901386821, guid: 394444f4eb7f2ed48b490185dc4e8f77, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2744452038901599389, guid: 394444f4eb7f2ed48b490185dc4e8f77, type: 3}
       propertyPath: m_Name
       value: BloodShowerLoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744452038901599389, guid: 394444f4eb7f2ed48b490185dc4e8f77, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2744452038901793203, guid: 394444f4eb7f2ed48b490185dc4e8f77, type: 3}
       propertyPath: m_RootOrder

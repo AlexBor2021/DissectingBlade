@@ -27,6 +27,7 @@ public class DieEnemy : MonoBehaviour
     private void Update()
     {
         _dalayTime += Time.deltaTime;
+
         if (_timeWaorkAnimator <= _dalayTime)
         {
             _animator.enabled = false;
