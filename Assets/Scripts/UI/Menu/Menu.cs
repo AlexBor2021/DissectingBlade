@@ -18,4 +18,8 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(_numberSceneMainMenu);
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

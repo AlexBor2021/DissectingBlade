@@ -22,7 +22,7 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
         {
             _timerLelvel._isStartTimer = false;
             _finishIcon.TakeInfo(_containerEnemy.CountEnemyKill, _containerEnemy.CountBossKill, _revard, _countStars);
