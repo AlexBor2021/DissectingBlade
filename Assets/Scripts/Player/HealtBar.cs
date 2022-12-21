@@ -15,6 +15,5 @@ public class HealtBar : Bar
     private void OnDisable()
     {
         _player.HealthChanged -= OnValueChanged;
-
     }
 }
