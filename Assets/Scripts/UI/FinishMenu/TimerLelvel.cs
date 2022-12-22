@@ -5,23 +5,17 @@ using TMPro;
 
 public class TimerLelvel : MonoBehaviour
 {
-    [SerializeField] private Finish _finish;
     [SerializeField] private List<float> _timesLevelEnd;
     [SerializeField] private TextMeshProUGUI _secondTimer;
     [SerializeField] private TextMeshProUGUI _minsTimer;
+    [SerializeField] private Finish _finish;
     
     private int _mins = 0;
     private float _dalayTime;
     private float _dalayTimeForCalculating;
     private const int _secondsIninutes = 60;
+    private bool _isStartTimer;
 
-    public bool _isStartTimer;
-
-    private void OnEnable()
-    {
-        _dalayTime = _timesLevelEnd[2];
-        _secondTimer.text = _timesLevelEnd[2].ToString();
-    }
 
     private void Update()
     {
@@ -30,10 +24,6 @@ public class TimerLelvel : MonoBehaviour
             _dalayTimeForCalculating += Time.deltaTime;
 
             TimerDrow();
-        }
-        else
-        {
-            _finish.CalculatingStarsAndRevard(SetStars());
         }
     }
 
@@ -45,33 +35,33 @@ public class TimerLelvel : MonoBehaviour
         }
     }
 
+    public void StopTimerPlayer()
+    {
+        _isStartTimer = false;
+        _finish.FinishedPlayer(SetStars());
+    }
+
     private void TimerDrow()
     {
-        if (_dalayTime > 0)
+        if (_dalayTime < _secondsIninutes)
         {
             if (_dalayTime > 10)
             {
-                _dalayTime -= Time.deltaTime;
+                _dalayTime += Time.deltaTime;
                 _secondTimer.text = _dalayTime.ToString("f0");
             }
             else
             {
-                _dalayTime -= Time.deltaTime;
+                _dalayTime += Time.deltaTime;
                 _secondTimer.text = 0 + _dalayTime.ToString("f0");
             }
         }
         else
         {
-            if (_mins > 0)
-            {
-                _mins--;
-                _minsTimer.text = _mins.ToString();
-                _dalayTime = 0;
-            }
-            else
-            {
-                _isStartTimer = false;
-            }
+            _mins++;
+            _minsTimer.text = _mins.ToString();
+            _secondTimer.text = "00";
+            _dalayTime = 0;
         }
     }
 

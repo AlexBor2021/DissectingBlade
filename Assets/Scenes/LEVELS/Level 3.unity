@@ -3294,7 +3294,7 @@ GameObject:
   - component: {fileID: 1389393955}
   - component: {fileID: 1389393954}
   - component: {fileID: 1389393953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BorderBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3573,7 +3573,7 @@ GameObject:
   - component: {fileID: 1491457078}
   - component: {fileID: 1491457077}
   - component: {fileID: 1491457076}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BorderFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6752,7 +6752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703749435}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}

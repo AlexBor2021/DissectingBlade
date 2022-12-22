@@ -9,14 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/YandexSDK.unity
     guid: 2c3ede9eb0ce2954398d72ac7fa248e4
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 05f14131d3ec936469241b882945d39b
+    path: Assets/Scenes/Main.unity
+    guid: 1861bbeb9a68f8241a3015ea489882d3
   - enabled: 1
-    path: Assets/Scenes/MenuLvl.unity
-    guid: 59625b969fb0bc54abb5970c91fbd4dc
+    path: Assets/Scenes/LEVELS/Level 1.unity
+    guid: 2dc3111a70b99c948a02a530c68e9c2a
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/LEVELS/Level 2.unity
+    guid: 3b225ed9d993ae540b5d56aeace2ffcf
+  - enabled: 1
+    path: Assets/Scenes/LEVELS/Level 3.unity
+    guid: f1c485f33abb4d748956767461d47bca
+  - enabled: 1
+    path: Assets/Scenes/LEVELS/Level 4.unity
+    guid: a288dfac510dab74189240ae5794c4b5
+  - enabled: 1
+    path: Assets/Scenes/LEVELS/Level 5.unity
+    guid: 8268ca2ade1b7044aab0391d5d5b4445
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 64379d3bcc52a7542bfcc5c8ef7fe6c8, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 4600fa34bbdeb394db776cb1b1424077, type: 2}

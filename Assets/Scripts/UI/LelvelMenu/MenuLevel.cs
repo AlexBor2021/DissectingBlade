@@ -5,7 +5,7 @@ public class MenuLevel : MonoBehaviour
 {
     [SerializeField] private GameObject _containerLevels;
 
-    private int _corectNumber = 3;
+    private int _corectNumber = 2;
 
 
     private void OnEnable()
@@ -18,6 +18,7 @@ public class MenuLevel : MonoBehaviour
 
     public void LoadLevel(int level)
     {
+        Debug.Log(level);
         SceneManager.LoadScene(level + _corectNumber);
     }
 }

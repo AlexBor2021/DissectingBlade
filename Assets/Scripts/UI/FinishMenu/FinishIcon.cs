@@ -14,7 +14,7 @@ public class FinishIcon : MonoBehaviour
     [SerializeField] private List<Animator> _animatorsStar;
     [SerializeField] private PauseGame _pauseGame;
 
-    private int _numberSceneLevelMenu = 2;
+    private int _numberSceneLevelMenu = 1;
 
     private void OnEnable()
     {

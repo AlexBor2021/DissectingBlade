@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class LevelButton : MonoBehaviour
 {
-    [SerializeField] private MenuLevel _menuLevel;
-    [SerializeField] private int _numberLevel;
+    private MenuLevel _menuLevel;
+    private int _numberLevel;
 
     public void Init(MenuLevel menuLevel, int number)
     {

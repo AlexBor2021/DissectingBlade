@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &900563350
 MonoBehaviour:
@@ -1124,20 +1124,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4340142990790818484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5150791}
+  m_LocalScale: {x: 0.53910583, y: 0.107821174, z: 0.53910583}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4340142991613113299}
   - {fileID: 4340142991825993927}
   - {fileID: 4340142991857111753}
-  m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 6
+  m_Father: {fileID: 4340142991131148631}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 33, y: -138}
+  m_AnchoredPosition: {x: 563.4797, y: 99.89137}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4340142990836163531
@@ -1883,13 +1883,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4340142991107400070}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c59f7f4ee147fb44980ae5be6bed89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyContainer: {fileID: 0}
   _bossContainer: {fileID: 0}
+  _timerLelvel: {fileID: 4340142991131148630}
 --- !u!1 &4340142991122669517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,10 +1993,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4340142991131148712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1012.2115, y: -524.5973, z: -0.9554322}
-  m_LocalScale: {x: 1.8549235, y: 9.274617, z: 1.8549235}
+  m_LocalPosition: {x: -1046.8, y: -532.75, z: 2.13}
+  m_LocalScale: {x: 1.8549235, y: 9.715161, z: 7.9320235}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4340142990790818483}
   m_Father: {fileID: 4340142992108382517}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2024,14 +2026,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a36ebd20f6a0ad459923b312a0c37c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _finish: {fileID: 4340142991933119889}
   _timesLevelEnd:
   - 25
   - 30
   - 60
   _secondTimer: {fileID: 4340142991857111752}
   _minsTimer: {fileID: 4340142991613113298}
-  _isStartTimer: 0
+  _finish: {fileID: 4340142991933119889}
 --- !u!1 &4340142991141154211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,7 +2436,7 @@ RectTransform:
   - {fileID: 4340142991575634344}
   - {fileID: 4340142992422468850}
   m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3446,7 +3447,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -5038,7 +5039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mission complit '
+  m_text: YOU WIN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5065,7 +5066,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.7
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5154,7 +5155,6 @@ MonoBehaviour:
   _timerLelvel: {fileID: 4340142991131148630}
   _finishIcon: {fileID: 4340142992438789084}
   _containerEnemy: {fileID: 4340142991107400068}
-  _unlockFinish: {fileID: 0}
   _revardConst: 50
 --- !u!1 &4340142991933529197
 GameObject:
@@ -5190,7 +5190,7 @@ RectTransform:
   - {fileID: 4340142991287392969}
   - {fileID: 4340142990946332886}
   m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5327,7 +5327,6 @@ RectTransform:
   - {fileID: 2134575385188766435}
   - {fileID: 4340142991933119891}
   - {fileID: 4340142991394199100}
-  - {fileID: 4340142990790818483}
   - {fileID: 4340142991503053379}
   - {fileID: 4340142991245047525}
   - {fileID: 4340142992438789085}
@@ -6631,7 +6630,7 @@ RectTransform:
   m_Children:
   - {fileID: 4340142990768172899}
   m_Father: {fileID: 4340142992108382517}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

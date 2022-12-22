@@ -12,7 +12,6 @@ public class WeaponPlayer : MonoBehaviour
     {
         if (other.TryGetComponent<EnemyBoss>(out _enemyBoss))
         {
-            Debug.Log(_damage);
             _enemyBoss.TakeDamage(_damage);
         }
     }
