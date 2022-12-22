@@ -26,12 +26,11 @@ public class Player : MonoBehaviour
    
     public void TakeDamage(int damage)
     {
-        
         if (_health <= 0)
         {
             Time.timeScale = 0.2f;
             _skinnedMeshRenderer.material = _diePlayer;
-            Invoke(nameof(PlayerDead), 3);
+            Invoke(nameof(PlayerDead), 1);
         }
         else
         {
