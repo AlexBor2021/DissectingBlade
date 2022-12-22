@@ -1,8 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-public class EnemyStateMachine : MonoBehaviour
+
+public class StateMachineBoss : MonoBehaviour
 {
     [SerializeField] private Weapons _currentWeapon;
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private EnemyBoss _enemyBoss;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _rotationSpeed;
 
@@ -14,12 +17,11 @@ public class EnemyStateMachine : MonoBehaviour
     {
         if (_lastAttackTime <= 0)
         {
-
-            if (IsStateAttack && !_enemy.IsDie)
+            if (IsStateAttack && !_enemyBoss.IsDie)
             {
-                    StateAttack();
+                StateAttack();
 
-                    _lastAttackTime = _currentWeapon.Delay;
+                _lastAttackTime = _currentWeapon.Delay;
             }
         }
         _lastAttackTime -= Time.deltaTime;
@@ -34,7 +36,7 @@ public class EnemyStateMachine : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation,
             Quaternion.Euler(0, rot, 0), Time.deltaTime * _rotationSpeed);
         }
-       
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,9 +64,8 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void StateAttack()
     {
-
         _animator.SetBool("Shoot", true);
         _currentWeapon.Shoot(_currentWeapon.ShootPosition, _target.position);
     }
-  
+
 }

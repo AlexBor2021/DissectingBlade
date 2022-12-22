@@ -16,7 +16,7 @@ public class DestroyObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Weapon>(out Weapon weapon) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
+        if (other.TryGetComponent<WeaponPlayer>(out WeaponPlayer weapon) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
         {
             Explosion();
         }

@@ -10,7 +10,6 @@ public class Bullet : MonoBehaviour
     public void SetTarget(Vector3 target)
     {
         _target = target;
-        
     }
 
     private void Update()
