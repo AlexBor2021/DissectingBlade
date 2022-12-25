@@ -25,6 +25,7 @@ public class MenuLevel : MonoBehaviour
         }
 
         ManagerInfoGame.ZeroInfo();
+        _nextlevel = 0;
     }
 
     public void LoadLevel(int level)
