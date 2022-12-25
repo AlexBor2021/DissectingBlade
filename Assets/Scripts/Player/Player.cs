@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] private int _maxHealth;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRenderer;
     [SerializeField] private Material _diePlayer;
-    
 
+    private MovePhysick _movePhysick;
     private int _health;
     private int _maxArmor;
     private int _currentArmor;
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _health = _maxHealth;
+        _movePhysick = GetComponent<MovePhysick>();
     }
 
    
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
     {
         if (_health <= 0)
         {
+            _movePhysick.ISMenu = true;
             Time.timeScale = 0.2f;
             _skinnedMeshRenderer.material = _diePlayer;
             Invoke(nameof(PlayerDead), 1);

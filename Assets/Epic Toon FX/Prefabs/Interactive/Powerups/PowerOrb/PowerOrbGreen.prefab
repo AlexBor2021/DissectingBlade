@@ -9679,6 +9679,7 @@ GameObject:
   - component: {fileID: 19980356}
   - component: {fileID: 191076054}
   - component: {fileID: 191076053}
+  - component: {fileID: 938030179641354323}
   m_Layer: 0
   m_Name: PowerOrbGreen
   m_TagString: Untagged
@@ -14451,7 +14452,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.34182358
+  m_Radius: 0.99
   m_Center: {x: 0, y: -0.000000029802322, z: 0.00000047683716}
 --- !u!114 &191076053
 MonoBehaviour:
@@ -14465,3 +14466,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e5d8200f5c2b442b039d8f5bd98a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pointer: {fileID: 938030179641354323}
+  _finishTutorial: {fileID: 0}
+--- !u!114 &938030179641354323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e632342f352454ebe8037e06c30052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IndexSpriteCurrent: 2

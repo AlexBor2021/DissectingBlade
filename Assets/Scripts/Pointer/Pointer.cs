@@ -10,7 +10,7 @@ public class Pointer : MonoBehaviour
     {
         Enemy,
         Chest,
-        Finish,
+        Tutorial,
     };
 
     private void Start()

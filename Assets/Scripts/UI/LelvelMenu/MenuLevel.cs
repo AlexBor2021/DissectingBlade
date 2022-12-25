@@ -18,7 +18,6 @@ public class MenuLevel : MonoBehaviour
 
     public void LoadLevel(int level)
     {
-        Debug.Log(level);
         SceneManager.LoadScene(level + _corectNumber);
     }
 }
