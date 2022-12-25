@@ -7,6 +7,7 @@ public class MenuLevel : MonoBehaviour
 
     private int _corectNumber = 3;
     private int _nextlevel = 1;
+    private int _numberMenuScene = 1;
 
     private void OnEnable()
     {
@@ -31,5 +32,9 @@ public class MenuLevel : MonoBehaviour
     public void LoadLevel(int level)
     {
         SceneManager.LoadScene(level + _corectNumber);
+    }
+    public void Exit()
+    {
+        SceneManager.LoadScene(_numberMenuScene);
     }
 }
