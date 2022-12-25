@@ -6,6 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject _button;
 
+    private int _numberLevelMenu = 2;
+
     private void OnEnable()
     {
 #if UNITY_WEBGL && YANDEX_GAMES
@@ -24,14 +26,9 @@ public class MainMenu : MonoBehaviour
         }
     }
     
-    public void Play()
+    public void LevelMenu()
     {
-        SceneManager.LoadScene(2);
-    }
-
-    public void LoadTutorial()
-    {
-
+        SceneManager.LoadScene(_numberLevelMenu);
     }
 
     public void Authtorize()

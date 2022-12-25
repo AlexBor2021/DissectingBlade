@@ -5,13 +5,16 @@ using UnityEngine;
 public class FinishTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject _iconFinish;
+    [SerializeField] private FinishIcon _finishIcon;
 
     private int _countBall;
+    private int _countStars = 3;
+    private int _revard = 10;
+
 
     private void OnEnable()
     {
         _countBall = transform.childCount;
-        Debug.Log(_countBall);
     }
 
     public void DeleteBall()
@@ -20,6 +23,7 @@ public class FinishTutorial : MonoBehaviour
 
         if (_countBall <= 0)
         {
+            _finishIcon.TakeInfo(0, 0, _revard, _countStars);
             _iconFinish.SetActive(true);
         }
     }
