@@ -45,8 +45,9 @@ public class FinishIcon : MonoBehaviour
         _coinCount.text = "x " + revard.ToString();
 
         SetStars(countStars);
-        Debug.Log(_numberLevel);
-        ManagerInfoGame.SaveInfoLevel(_numberLevel, revard, countStars, _comliteLevel);
+        
+        ManagerInfoGame.SaveInfoLevel(_numberLevel, countStars, _comliteLevel);
+        ManagerInfoGame.AddCoinInWalletPlayer(revard);
     }
 
     public void LoadlevelMenu()
