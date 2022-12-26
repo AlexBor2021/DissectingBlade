@@ -4,16 +4,21 @@ using UnityEngine;
 
 public static class ManagerInfoGame 
 {
-    public static int CountStarsForLevel;
-    public static int CurrentLevel;
-    public static int CountCoinPlayer;
-
-    public static bool IsLevelCompled;
-
-    public static void ZeroInfo()
+    public class LevelInfo
     {
-        CountStarsForLevel = 0;
-        CurrentLevel = 0;
-        IsLevelCompled = false;
+        public static string CountStarsForLevel = "CountStarsForLevel";
+        public static string RevardForLevel = "RevardForLevel";
+        public static string IScompliteLevel = "IScomplitelevel";
+    }
+    
+    public static void SaveInfoLevel(int currentLevel, int revard, int countStars, int complitelevel)
+    {
+        //Debug.Log(currentLevel);
+        //Debug.Log(revard);
+        //Debug.Log(countStars);
+
+        PlayerPrefs.SetInt(LevelInfo.CountStarsForLevel + currentLevel, countStars);
+        PlayerPrefs.SetInt(LevelInfo.RevardForLevel + currentLevel, revard);
+        PlayerPrefs.SetInt(LevelInfo.IScompliteLevel + currentLevel, complitelevel);
     }
 }

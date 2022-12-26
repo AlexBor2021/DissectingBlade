@@ -177,7 +177,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &908396418622534998
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &1044926442470046130
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &1584452935113860775
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &3190377501060619533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &3696611806651308916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &5512721955832619025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &5834407118414144929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,7 +2016,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &7025883596781406142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2196,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &7720354885194396397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,7 +2816,7 @@ MonoBehaviour:
   _enemy: {fileID: 0}
   limbs: 0
   IsBoss: 1
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
 --- !u!1 &9044117475218569737
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,8 +13,10 @@ public class FinishIcon : MonoBehaviour
     [SerializeField] private GameObject _bossIcon;
     [SerializeField] private List<Animator> _animatorsStar;
     [SerializeField] private PauseGame _pauseGame;
+    [SerializeField] private int _numberLevel;
 
     private int _numberSceneLevelMenu = 2;
+    private int _comliteLevel = 1;
 
     private void OnEnable()
     {
@@ -43,15 +45,12 @@ public class FinishIcon : MonoBehaviour
         _coinCount.text = "x " + revard.ToString();
 
         SetStars(countStars);
-        
-        ManagerInfoGame.CountStarsForLevel = countStars;
-        ManagerInfoGame.CountCoinPlayer += revard;
-        ManagerInfoGame.CurrentLevel = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log(_numberLevel);
+        ManagerInfoGame.SaveInfoLevel(_numberLevel, revard, countStars, _comliteLevel);
     }
 
     public void LoadlevelMenu()
     {
-        ManagerInfoGame.IsLevelCompled = true;
         SceneManager.LoadScene(_numberSceneLevelMenu);
     }
     

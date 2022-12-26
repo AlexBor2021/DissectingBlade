@@ -5,34 +5,24 @@ public class MenuLevel : MonoBehaviour
 {
     [SerializeField] private GameObject _containerLevels;
 
-    private int _corectNumber = 3;
-    private int _nextlevel = 1;
     private int _numberMenuScene = 1;
 
     private void OnEnable()
     {
-        ManagerInfoGame.CurrentLevel -= _corectNumber;
-        _nextlevel += ManagerInfoGame.CurrentLevel;
-
         for (int i = 0; i < _containerLevels.transform.childCount; i++)
         {
-            _containerLevels.transform.GetChild(i).GetComponent<Level>().Init(this, i);
+            _containerLevels.transform.GetChild(i).GetComponent<Level>().LoadInfolevel();
             
-            if (i == ManagerInfoGame.CurrentLevel && ManagerInfoGame.IsLevelCompled)
+            if (_containerLevels.transform.GetChild(i).GetComponent<Level>().IsComlite)
             {
-                _containerLevels.transform.GetChild(i).GetComponent<Level>().SetStars(ManagerInfoGame.CountStarsForLevel);
-                _containerLevels.transform.GetChild(_nextlevel).GetComponent<Level>().UnlockLevel();
+                int nextLevel = i;
+                nextLevel++;
+
+                _containerLevels.transform.GetChild(nextLevel).GetComponent<Level>().UnlockLevel();
             }
         }
-
-        ManagerInfoGame.ZeroInfo();
-        _nextlevel = 1;
     }
-
-    public void LoadLevel(int level)
-    {
-        SceneManager.LoadScene(level + _corectNumber);
-    }
+    
     public void Exit()
     {
         SceneManager.LoadScene(_numberMenuScene);

@@ -399,7 +399,9 @@ MonoBehaviour:
   - {fileID: 8442745766698225961}
   - {fileID: 8442745767820704609}
   - {fileID: 8442745767966620765}
-  _unlock: {fileID: 8442745767322408248}
+  _lockPanel: {fileID: 8442745767322408248}
+  _menuLevel: {fileID: 0}
+  _numberLevel: 0
 --- !u!1 &8442745767322408248
 GameObject:
   m_ObjectHideFlags: 0
