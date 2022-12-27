@@ -26,8 +26,6 @@ public class WeaponPlayer : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(PlayerPrefs.GetInt(ManagerInfoGame.PlayerInfo.CurrentWeapon));
-
         if (_currentWeapon != PlayerPrefs.GetInt(ManagerInfoGame.PlayerInfo.CurrentWeapon))
         {
             SetWeapon();
