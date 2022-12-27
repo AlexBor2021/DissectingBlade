@@ -21,7 +21,6 @@ public class SoundSetting : MonoBehaviour
 
     public void ChangeVolumeMusic()
     {
-        Debug.Log(_music.value);
         _audioMixerGroup.audioMixer.SetFloat(_musicVolume, Mathf.Lerp(-80, 0, _music.value));
         
         if (_music.value == 0)
