@@ -13,14 +13,13 @@ public class FinishIcon : MonoBehaviour
     [SerializeField] private GameObject _bossIcon;
     [SerializeField] private List<Animator> _animatorsStar;
     [SerializeField] private PauseGame _pauseGame;
+    [SerializeField] private int _numberLevel;
 
-    private int _numberLevel;
     private int _numberSceneLevelMenu = 2;
     private int _comliteLevel = 1;
 
     private void OnEnable()
     {
-        _numberLevel = SceneManager.GetActiveScene().buildIndex-2;
         _pauseGame.SetPause();
     }
     private void OnDisable()
@@ -46,7 +45,7 @@ public class FinishIcon : MonoBehaviour
         _coinCount.text = "x " + revard.ToString();
 
         SetStars(countStars);
-        
+
         ManagerInfoGame.SaveInfoLevel(_numberLevel, countStars, _comliteLevel);
         ManagerInfoGame.AddCoinInWalletPlayer(revard);
     }
