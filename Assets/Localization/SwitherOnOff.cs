@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class SwitherOnOff : MonoBehaviour
 {
-    [SerializeField] private GameObject _button;
+    [SerializeField] private GameObject _objectForOnOff;
    
     public void Switch()
     {
-        if (_button.activeSelf)
+        if (_objectForOnOff.activeSelf)
         {
-            _button.SetActive(false);
+            _objectForOnOff.SetActive(false);
         }
         else
         {
-            _button.SetActive(true);
+            _objectForOnOff.SetActive(true);
         }
     }
    
