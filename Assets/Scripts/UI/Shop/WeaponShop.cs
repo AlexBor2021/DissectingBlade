@@ -16,6 +16,7 @@ public class WeaponShop : MonoBehaviour
 
     private void OnEnable()
     {
+        _priceText.text = _price.ToString();
         LoadInfo();
     }
 
