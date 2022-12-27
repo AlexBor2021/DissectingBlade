@@ -41,10 +41,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Heal(int health)
+    public void Heal(int health)
     {
-        _health = Mathf.Clamp(_health + health, 0, _maxHealth);
-        HealthChanged?.Invoke(_health, _maxHealth);
+        if (_health!= _maxHealth)
+        {
+            _health = Mathf.Clamp(_health + health, 0, _maxHealth);
+            HealthChanged?.Invoke(_health, _maxHealth);
+        }
     }
 
     private void PlayerDead()
