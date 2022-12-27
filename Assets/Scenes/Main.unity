@@ -11402,42 +11402,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 384437847776601590, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 384437847776601590, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 384437848617543089, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 384437848617543089, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 384437848617543089, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 843107459198180666, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2490111042892980100, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3001782437617707017, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4873594796748476147, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: _camera
-      value: 
-      objectReference: {fileID: 963194227}
     - target: {fileID: 4911392926587501388, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11485,18 +11449,6 @@ PrefabInstance:
     - target: {fileID: 5720439543126909430, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5720439543126909435, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: _maxHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5720439543598749343, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361755490098392863, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b83bbbf9d04524d4c881f7bc243c1392, type: 3}

@@ -25,7 +25,8 @@ public class WeaponShop : MonoBehaviour
         if (_price < PlayerPrefs.GetInt(ManagerInfoGame.PlayerInfo.Walett))
         {
             ManagerInfoGame.PayCoinFromWalletPlayer(_price);
-            _buttonBuy.SetActive(false);
+            _buttonBuy.SetActive(false); 
+            _buttonSet.SetActive(true);
             _isBuy = true;
             ManagerInfoGame.SaveInfoWeaponShop(_indexWepon, _isBuy, _isSetWeapon);
         }
@@ -45,21 +46,22 @@ public class WeaponShop : MonoBehaviour
         {
             _isBuy = true;
             _buttonBuy.SetActive(false);
+
+            if (PlayerPrefs.GetInt(ManagerInfoGame.WeaponShopInfo.IsSetWeapon) > 0)
+            {
+                _isSetWeapon = true;
+                _buttonSet.SetActive(false);
+            }
+            else
+            {
+                _isSetWeapon = false;
+                _buttonSet.SetActive(true);
+            }
         }
         else
         {
             _isBuy = false;
             _buttonBuy.SetActive(true);
-        }
-        if (PlayerPrefs.GetInt(ManagerInfoGame.WeaponShopInfo.IsSetWeapon) > 0)
-        {
-            _isSetWeapon = true;
-            _buttonSet.SetActive(false);
-        }
-        else
-        {
-            _isSetWeapon = false;
-            _buttonSet.SetActive(true);
         }
     }
 }
