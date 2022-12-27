@@ -27,7 +27,7 @@ public class MovePhysick : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Time.timeScale = 0.5f;
+                Time.timeScale = 0.2f;
                 OnRegdoll();
                 _pastTime = _timerForForseDoll;
                 _arrow.gameObject.SetActive(true);
