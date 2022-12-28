@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class LimbEnemy : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _blood;
     [SerializeField] private Enemy _enemy;
     [SerializeField] private Limbs limbs;
+    [SerializeField] private AudioSource _hitSword;
 
     private EnemyBoss _enemyBoss;
 
@@ -30,6 +32,7 @@ public class LimbEnemy : MonoBehaviour
                 Vector3 positionContact = collision.contacts[0].point;
                 Quaternion rotationContact = Quaternion.LookRotation(collision.contacts[0].normal);
                 Instantiate(_blood, positionContact, Quaternion.Inverse(rotationContact));
+                _hitSword.Play();
                 _enemy.EnemyDie(((int)limbs));
             }
         }
@@ -38,6 +41,7 @@ public class LimbEnemy : MonoBehaviour
             Vector3 positionContact = collision.contacts[0].point;
             Quaternion rotationContact = Quaternion.LookRotation(collision.contacts[0].normal);
             Instantiate(_blood, positionContact, Quaternion.Inverse(rotationContact));
+            _hitSword.Play();
         }
     }
 }
