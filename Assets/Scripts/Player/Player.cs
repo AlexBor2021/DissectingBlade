@@ -2,6 +2,7 @@ using RootMotion.Dynamics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 
 public class Player : MonoBehaviour
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private int _maxHealth;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRenderer;
     [SerializeField] private Material _diePlayer;
+    [SerializeField] private AudioSource _hit;
 
     private MovePhysick _movePhysick;
     private int _health;
@@ -38,6 +40,7 @@ public class Player : MonoBehaviour
         {
             _health = Mathf.Clamp(_health - damage, 0, _maxHealth);
             HealthChanged?.Invoke(_health, _maxHealth);
+            _hit.Play();
         }
     }
 

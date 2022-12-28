@@ -180,7 +180,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 1
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &556959539169348202
 GameObject:
@@ -359,7 +359,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 2
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &1122606983838450568
 GameObject:
@@ -537,7 +537,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 5
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &2073906681052124543
 GameObject:
@@ -715,7 +715,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 2
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &2701205127686569541
 GameObject:
@@ -741,7 +741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2701205127686569541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00000035762787, y: 0, z: -0.00000029429793}
+  m_LocalPosition: {x: -0.00000017881393, y: 0.00000023841858, z: -0.000000055879354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 4
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &4213087170045798572
 GameObject:
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 5
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &5024886639621886921
 GameObject:
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 0
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &5230346749581990491
 GameObject:
@@ -1652,7 +1652,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 4
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &6790788882616919604
 GameObject:
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 3
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &7546369722657600614
 GameObject:
@@ -2580,7 +2580,7 @@ MonoBehaviour:
   _blood: {fileID: 4678688322226570690, guid: db45287b5939d3c45b6e1945f00e1971, type: 3}
   _enemy: {fileID: 7968681463214221685}
   limbs: 3
-  _hitSword: {fileID: 8619752400324917129}
+  _hit: {fileID: 8619752400324917129}
   IsBoss: 0
 --- !u!1 &8410978365091278127
 GameObject:
@@ -2895,8 +2895,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8410978365351329833}
-  m_LocalRotation: {x: -0.056234796, y: 0.68256986, z: 0.72789806, w: 0.03317482}
-  m_LocalPosition: {x: -0.0050002155, y: 0.36302787, z: 0.031004742}
+  m_LocalRotation: {x: -0.056234773, y: 0.68256986, z: 0.72789806, w: 0.033174872}
+  m_LocalPosition: {x: -0.00500037, y: 0.3630274, z: 0.031004338}
   m_LocalScale: {x: 1.0000002, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3683,8 +3683,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8410978366624511210}
-  m_LocalRotation: {x: -1.1641528e-10, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00000008009372, y: 0.0000001192093, z: 0.5000004}
+  m_LocalRotation: {x: -1.16415294e-10, y: 0.0000000018626447, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00000018812712, y: 0, z: 0.49999955}
   m_LocalScale: {x: 1.0000002, y: 0.99999964, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

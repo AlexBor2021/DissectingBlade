@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class DieEnemy : MonoBehaviour
@@ -8,10 +9,16 @@ public class DieEnemy : MonoBehaviour
     [SerializeField] private List<GameObject> _bloodEffects;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _timeWaorkAnimator;
+    [SerializeField] private AudioSource _hit;
 
     private float _dalayTime;
 
     private const string _shoot = "Shoot";
+
+    private void OnEnable()
+    {
+        _hit.Play();
+    }
 
     private void Start()
     {

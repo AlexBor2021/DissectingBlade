@@ -1545,7 +1545,6 @@ MonoBehaviour:
   - {fileID: 7361755490098392863}
   - {fileID: 843107459198180666}
   - {fileID: 3001782437617707017}
-  _hitSworld: {fileID: 4419688396010102293}
 --- !u!1 &4873594796748476146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,6 +2135,7 @@ MonoBehaviour:
   _maxHealth: 10
   _skinnedMeshRenderer: {fileID: 2594520278749698343}
   _diePlayer: {fileID: 2100000, guid: 43fb55fa58184d846a9d274bb18a41b6, type: 2}
+  _hit: {fileID: 4419688396010102293}
 --- !u!114 &4873594795140765977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,7 +2777,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -428240397156285267, guid: 864d5be24b7c00b42a758e3f5341670e, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 82f725d61ebe3da409083de1ac31b6f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9e2083c4edfb66c458e0b0c99ca4c0d0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

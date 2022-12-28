@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using RootMotion.Dynamics;
 using UnityEngine.Events;
 
@@ -12,6 +13,7 @@ public class EnemyBoss : MonoBehaviour
     [SerializeField] private PuppetMaster _puppetMasterSettings;
     [SerializeField] private Pointer _pointer;
     [SerializeField] private int _health;
+    [SerializeField] private AudioSource _deadVouse;
 
     public bool IsDie;
     public int Health => _health;
@@ -22,6 +24,7 @@ public class EnemyBoss : MonoBehaviour
         if (_health <= 0 )
         {
             EnemyBossDie();
+            _deadVouse.Play();
         }
     }
     public void EnemyBossDie()
