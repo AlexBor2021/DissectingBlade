@@ -98,6 +98,41 @@ MonoBehaviour:
     m_Localized: About
     m_Metadata:
       m_Items: []
+  - m_Id: 3650595858268160
+    m_Localized: "Pekala, \xF6\u011Frenci, hadi hareket etmeyi \xF6\u011Frenelim.
+      Hareket i\xE7in LMB'Y\u0130 s\u0131k\u0131\u015Ft\u0131r\u0131n ve ne kadar
+      \xE7ok \xE7ekerseniz o kadar h\u0131zl\u0131 u\xE7ars\u0131n\u0131z"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3651245497237504
+    m_Localized: "Ba\u015Flamak i\xE7in, t\xFCm g\xFC\xE7 alanlar\u0131n\u0131 toplay\u0131n,
+      bundan sonra ger\xE7ek bir tehditle kar\u015F\u0131la\u015Facaks\u0131n\u0131z.."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3651707692761088
+    m_Localized: "\xD6n\xFCnde \xE7ok k\xF6t\xFC insanlarla tan\u0131\u015Facaks\u0131n..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3652262896975872
+    m_Localized: "Bu k\xF6t\xFCler k\xF6y\xFCm\xFCze sald\u0131r\u0131p ele ge\xE7irdiler,
+      onlara kar\u015F\u0131 sava\u015Fman\u0131z gerekecek.... \u0130cab\u0131na
+      bak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3652750145077248
+    m_Localized: SKIP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3654119346257920
+    m_Localized: "\u0130\u015Fte tan\u0131\u015Ft\u0131k...\nSeni buraya kim g\xF6nderdi??\nPatronun
+      kim?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3654598885228544
+    m_Localized: "ha ha\nSana her \u015Feyi b\xF6yle anlataca\u011F\u0131m\u0131
+      m\u0131 san\u0131yorsun?\t"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

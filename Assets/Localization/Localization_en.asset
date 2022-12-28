@@ -98,6 +98,44 @@ MonoBehaviour:
     m_Localized: About
     m_Metadata:
       m_Items: []
+  - m_Id: 3650595858268160
+    m_Localized: Well, student, let's learn to move. To move, pinch the LMB and the
+      harder you pull, the faster you will fly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3651245497237504
+    m_Localized: To begin with, collect all the spheres of power, after that you
+      will meet with a real threat..
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3651707692761088
+    m_Localized: Ahead you will meet with very bad people...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3652262896975872
+    m_Localized: These villains attacked and captured our village, you will have
+      to fight against them.... Deal with him.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3652750145077248
+    m_Localized: SKIP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3654119346257920
+    m_Localized: 'So we met...
+
+      who sent you here??
+
+      Who is your boss?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3654598885228544
+    m_Localized: 'Ha ha
+
+      do you think I''m going to tell you everything like
+      that?'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
