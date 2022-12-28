@@ -2507,6 +2507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _containerLevels: {fileID: 1563618373}
+  _generalMarketing: {fileID: 0}
 --- !u!224 &323906992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9581,6 +9582,14 @@ PrefabInstance:
     - target: {fileID: 4114502404557143002, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114502404732360876, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114502405585230611, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4340142990790818484, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_IsActive

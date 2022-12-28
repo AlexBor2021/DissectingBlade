@@ -50,6 +50,54 @@ MonoBehaviour:
     m_Localized: Effects
     m_Metadata:
       m_Items: []
+  - m_Id: 3627835794767872
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3628109682819072
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3628185616498688
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629050414874624
+    m_Localized: YOU ARE DEAD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629669083103232
+    m_Localized: REVARDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629793842675712
+    m_Localized: ENEMY KILL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3629941415067648
+    m_Localized: LEVEL PASSED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3630871334207488
+    m_Localized: Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3631777782022144
+    m_Localized: Double
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3639507427115008
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3642310925074432
+    m_Localized: Like
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3642879974686720
+    m_Localized: About
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
