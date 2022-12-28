@@ -4747,6 +4747,10 @@ PrefabInstance:
       propertyPath: _numberLevel
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4828145334197346342, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 532014164322975604}
     - target: {fileID: 5359733804544860389, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_IsActive
       value: 0

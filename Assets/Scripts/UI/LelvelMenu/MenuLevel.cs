@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MenuLevel : MonoBehaviour
 {
     [SerializeField] private GameObject _containerLevels;
+    [SerializeField] private GeneralMarketing _generalMarketing;
 
     private int _numberMenuScene = 1;
 
@@ -21,6 +22,8 @@ public class MenuLevel : MonoBehaviour
                 _containerLevels.transform.GetChild(nextLevel).GetComponent<Level>().UnlockLevel();
             }
         }
+
+        _generalMarketing.ShowBaner();
     }
     
     public void Exit()

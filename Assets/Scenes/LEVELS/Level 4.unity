@@ -1226,6 +1226,10 @@ PrefabInstance:
       propertyPath: _numberLevel
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4828145334197346342, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 532014164322975604}
     - target: {fileID: 8095647846484697069, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _player
       value: 
