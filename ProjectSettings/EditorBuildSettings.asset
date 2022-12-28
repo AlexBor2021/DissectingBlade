@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LEVELS/Level 5.unity
     guid: d3985839ff278184781ef870dfe2de4b
+  - enabled: 1
+    path: Assets/Scenes/LEVELS/Level 6.unity
+    guid: a3d4451809193864196760744b121d66
+  - enabled: 1
+    path: Assets/Scenes/LEVELS/Level 7.unity
+    guid: 04d5abafb48a58246bb4e312bd9fe9ff
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 64379d3bcc52a7542bfcc5c8ef7fe6c8, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 4600fa34bbdeb394db776cb1b1424077, type: 2}
