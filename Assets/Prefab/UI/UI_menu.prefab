@@ -15541,6 +15541,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 364691554538111750}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInstalateForHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ResurrectionPlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618564689494835449, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8618564689687643842, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15733,6 +15761,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8618564689687643843, guid: 375cb5cfba858c548bd3522a6f08e8d9, type: 3}
   m_PrefabInstance: {fileID: 3457081377341482815}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &364691554538111750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368459164364055036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d459aeb98c410294e812ce9dd8017509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _audioMixer: {fileID: 24100000, guid: 864d5be24b7c00b42a758e3f5341670e, type: 2}
 --- !u!114 &4713432494161707398
 MonoBehaviour:
   m_ObjectHideFlags: 0

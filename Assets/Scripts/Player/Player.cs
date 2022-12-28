@@ -49,9 +49,14 @@ public class Player : MonoBehaviour
             HealthChanged?.Invoke(_health, _maxHealth);
         }
     }
+    public void ResurrectionPlayer()
+    {
+        _health = _maxHealth;
+    }
 
     private void PlayerDead()
     {
         _losePanel.SetActive(true);
     }
+
 }
