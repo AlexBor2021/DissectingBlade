@@ -1539,12 +1539,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202ba2008935e50438e73f69e7d2f946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
+  _damageDefoult: 10
   _wepons:
   - {fileID: 5720439543598749343}
   - {fileID: 7361755490098392863}
   - {fileID: 843107459198180666}
   - {fileID: 3001782437617707017}
+  _weaponShop: {fileID: 0}
 --- !u!1 &4873594796748476146
 GameObject:
   m_ObjectHideFlags: 0

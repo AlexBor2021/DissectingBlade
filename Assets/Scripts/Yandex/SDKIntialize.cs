@@ -9,17 +9,14 @@ using UnityEngine.SceneManagement;
 
 public class SDKIntialize : MonoBehaviour
 {
-    private IEnumerator  Start()
+    private IEnumerator Start()
     {
-         DontDestroyOnLoad(this.gameObject);
-
-#if UNITY_WEBGL && YANDEX_GAMES && !UNITY_EDITOR
-
-        yield return YandexGamesSdk.Initialize();
-#else
-        SceneManager.LoadScene(1);
+#if !UNITY_WEBGL || UNITY_EDITOR
+        yield break;
 #endif
-        yield return null;
-    }
+        yield return YandexGamesSdk.Initialize();
 
+        DontDestroyOnLoad(this.gameObject);
+        SceneManager.LoadScene(1);
+    }
 }

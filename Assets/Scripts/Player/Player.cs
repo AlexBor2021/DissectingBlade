@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
     public void ResurrectionPlayer()
     {
         _health = _maxHealth;
+        Heal(_maxHealth);
     }
 
     private void PlayerDead()

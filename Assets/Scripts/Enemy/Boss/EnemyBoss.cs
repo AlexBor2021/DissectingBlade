@@ -17,6 +17,7 @@ public class EnemyBoss : MonoBehaviour
 
     public bool IsDie;
     public int Health => _health;
+
     public event UnityAction<EnemyBoss> DieBoss;
 
     private void Update()
