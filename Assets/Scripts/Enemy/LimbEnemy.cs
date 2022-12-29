@@ -27,7 +27,7 @@ public class LimbEnemy : MonoBehaviour
     {
         if (IsBoss ==false)
         {
-            if (collision.gameObject.GetComponent<WeaponPlayer>() && _enemy.IsDie == false)
+            if (collision.gameObject.GetComponent<ListWeaponsPlayer>() && _enemy.IsDie == false)
             {
                 Vector3 positionContact = collision.contacts[0].point;
                 Quaternion rotationContact = Quaternion.LookRotation(collision.contacts[0].normal);
@@ -35,7 +35,7 @@ public class LimbEnemy : MonoBehaviour
                 _enemy.EnemyDie(((int)limbs));
             }
         }
-        else if(collision.gameObject.GetComponent<WeaponPlayer>())
+        else if(collision.gameObject.GetComponent<ListWeaponsPlayer>())
         {
             Vector3 positionContact = collision.contacts[0].point;
             Quaternion rotationContact = Quaternion.LookRotation(collision.contacts[0].normal);

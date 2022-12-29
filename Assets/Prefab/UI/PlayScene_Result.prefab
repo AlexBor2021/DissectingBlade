@@ -2363,6 +2363,7 @@ MonoBehaviour:
   - {fileID: 513873489}
   - {fileID: 27866572}
   _pauseGame: {fileID: 0}
+  _panelRevard: {fileID: 0}
   _numberLevel: 1
 --- !u!114 &1120506744624859660
 MonoBehaviour:

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
@@ -10,21 +11,28 @@ public class DestroyObject : MonoBehaviour
     [SerializeField] private List<Rigidbody> _rigidbodiesDestroy;
     [SerializeField] private Transform _plaseExplosion;
     [SerializeField] private bool _isBomb;
-
+    [SerializeField] private AudioSource _destroySound;
 
     private Collider[] _overlappedColiders;
+    private bool _isOne = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<WeaponPlayer>(out WeaponPlayer weapon) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
+        if (other.TryGetComponent<ListWeaponsPlayer>(out ListWeaponsPlayer weapon) || other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
         {
-            Explosion();
+            if (_isOne)
+            {
+                _isOne = false;
+                Explosion();
+                _destroySound.Play();
+            }
         }
     }
     public void Explosion()
     {
         _gameObjectNotDestroy.SetActive(false);
         _gameObjectDestroy.SetActive(true);
+
 
         _overlappedColiders = Physics.OverlapSphere(_plaseExplosion.position, _radius);
 
