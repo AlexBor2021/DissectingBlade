@@ -13,7 +13,6 @@ public class ManagerButtonSet : MonoBehaviour
         for (int i = 0; i < transform.childCount-1; i++)
         {
             _weaponShops[i].LoadInfo();
-            Debug.Log(i);
         }
     }
 }
