@@ -56,7 +56,6 @@ public class FinishIcon : MonoBehaviour
 
     public void LoadlevelMenu()
     {
-        Debug.Log(_revard);
         ManagerInfoGame.AddCoinInWalletPlayer(_revard);
         SceneManager.LoadScene(_numberSceneLevelMenu);
     }

@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class ManagerButtonSet : MonoBehaviour
 {
-    private List<WeaponShop> _weaponShops;
+    [SerializeField] private List<WeaponShop> _weaponShops;
 
     private WeaponShop _weaponShop;
 
-    private void Awake()
+    public void LoadInfo()
     {
-        for (int i = 0; i < transform.childCount; i++)
+        for (int i = 0; i < transform.childCount-1; i++)
         {
-            if (transform.GetChild(i).GetComponent<WeaponShop>() != null)
-            {
-                _weaponShops.Add(transform.GetChild(i).GetComponent<WeaponShop>());
-            }
+            _weaponShops[i].LoadInfo();
+            Debug.Log(i);
         }
     }
 }

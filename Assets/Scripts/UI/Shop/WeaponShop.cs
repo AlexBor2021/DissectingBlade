@@ -9,10 +9,12 @@ public class WeaponShop : MonoBehaviour
     [SerializeField] private int _price;
     [SerializeField] private int _indexWepon;
     [SerializeField] private TextMeshProUGUI _priceText;
+    [SerializeField] private ManagerButtonSet _managerButtonSet;
     [SerializeField] private GameObject _buttonBuy;
     [SerializeField] private GameObject _buttonSet;
-    [SerializeField] private bool _isBuy;
-    [SerializeField] private bool _isSetWeapon;
+
+    private bool _isSetWeapon;
+    private bool _isBuy;
 
     private void OnEnable()
     {
@@ -47,9 +49,11 @@ public class WeaponShop : MonoBehaviour
         _buttonSet.SetActive(false);
        
         _weaponPlayer.SetWeapon();
+
+        _managerButtonSet.LoadInfo();
     }
 
-    private void LoadInfo()
+    public void LoadInfo()
     {
         if (PlayerPrefs.GetInt(ManagerInfoGame.WeaponShopInfo.IsBuyWeapon + _indexWepon) > 0)
         {
