@@ -164,6 +164,24 @@ MonoBehaviour:
     m_Localized: Set
     m_Metadata:
       m_Items: []
+  - m_Id: 4308507672821760
+    m_Localized: According to Victor, the enemy is somewhere in this city...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4424249017745408
+    m_Localized: These villains attacked and captured our village, you will have
+      to fight against them.... Deal with him.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425108413857792
+    m_Localized: The leader must be here somewhere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425594714046464
+    m_Localized: These villains attacked and captured our village, you will have
+      to fight against them.... Deal with him.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -67,7 +67,7 @@ public class TimerLelvel : MonoBehaviour
 
     private int SetStars()
     {
-        if (_dalayTimeForCalculating < _timesLevelEnd[2])
+        if (_dalayTimeForCalculating < _timesLevelEnd[0])
         {
             return 3;
         }
@@ -75,7 +75,7 @@ public class TimerLelvel : MonoBehaviour
         {
             return 2;
         }
-        else if (_dalayTimeForCalculating < _timesLevelEnd[0])
+        else if (_dalayTimeForCalculating < _timesLevelEnd[2])
         {
             return 1;
         }

@@ -161,6 +161,26 @@ MonoBehaviour:
     m_Localized: Set
     m_Metadata:
       m_Items: []
+  - m_Id: 4308507672821760
+    m_Localized: According to Victor, the enemy is somewhere in this city...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4424249017745408
+    m_Localized: "Bu k\xF6t\xFCler k\xF6y\xFCm\xFCze sald\u0131r\u0131p ele ge\xE7irdiler,
+      onlara kar\u015F\u0131 sava\u015Fman\u0131z gerekecek.... \u0130cab\u0131na
+      bak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425108413857792
+    m_Localized: "Lider burada bir yerlerde olmal\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4425594714046464
+    m_Localized: "Bu k\xF6t\xFCler k\xF6y\xFCm\xFCze sald\u0131r\u0131p ele ge\xE7irdiler,
+      onlara kar\u015F\u0131 sava\u015Fman\u0131z gerekecek.... \u0130cab\u0131na
+      bak."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
