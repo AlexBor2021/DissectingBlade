@@ -14,6 +14,7 @@ public class EnemyBoss : MonoBehaviour
     [SerializeField] private Pointer _pointer;
     [SerializeField] private int _health;
     [SerializeField] private AudioSource _deadVouse;
+    [SerializeField] private GameObject _deadEffect;
 
     public bool IsDie;
     public int Health => _health;
@@ -35,6 +36,7 @@ public class EnemyBoss : MonoBehaviour
         _stateMachineBoss.enabled = false;
         _pointer.DeletePointer(); 
         DieBoss?.Invoke(this);
+        _deadEffect.SetActive(true);
     }
     
     public void TakeDamage(int damage)
