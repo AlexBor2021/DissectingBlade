@@ -36,7 +36,7 @@ public class SoundSetting : MonoBehaviour
     }
     public void ChangeVolumeEffect()
     {
-        _audioMixerGroup.audioMixer.SetFloat(_musicVolume, Mathf.Lerp(-80, 0, _effect.value));
+        _audioMixerGroup.audioMixer.SetFloat(_effectVolume, Mathf.Lerp(-80, 0, _effect.value));
 
         if (_effect.value == 0)
         {
