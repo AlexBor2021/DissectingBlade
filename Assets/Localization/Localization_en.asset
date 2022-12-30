@@ -140,6 +140,30 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 4305809682579456
+    m_Localized: SALE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4306215301136384
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4307188551630848
+    m_Localized: POPULAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4307660423413760
+    m_Localized: "\u0421hest of gold"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4308122405027840
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4308159751110656
+    m_Localized: Set
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
