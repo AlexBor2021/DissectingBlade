@@ -5551,6 +5551,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1626870633702852810, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_text
+      value: Moon Katana
+      objectReference: {fileID: 0}
     - target: {fileID: 1626870634215389294, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5603,6 +5607,10 @@ PrefabInstance:
       propertyPath: _weaponPlayer
       value: 
       objectReference: {fileID: 1729459273}
+    - target: {fileID: 2133518371266527924, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_text
+      value: Sakura blade
+      objectReference: {fileID: 0}
     - target: {fileID: 2133518371958322842, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5766,6 +5774,10 @@ PrefabInstance:
     - target: {fileID: 2770157341451324367, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770157341713912478, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_text
+      value: Lightning Spear
       objectReference: {fileID: 0}
     - target: {fileID: 2770157341893988853, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6559,6 +6571,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6794230738424657106, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_text
+      value: 'Explosion Katana '
+      objectReference: {fileID: 0}
     - target: {fileID: 6794230738571179961, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7153,7 +7169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795408828543038738, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8795408828577021709, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_SizeDelta.x
