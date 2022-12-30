@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2340ac92e8b82484a9c8070b39bb20de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countHeal: 5
+  countHeal: 10
   _player: {fileID: 532014164322975604}
 --- !u!1 &891252626
 GameObject:
@@ -3275,17 +3275,19 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 175671780835145317, guid: 315050d378b700943aff76df62626fe5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 938030179641354323, guid: 315050d378b700943aff76df62626fe5, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 938030179641354323, guid: 315050d378b700943aff76df62626fe5, type: 3}
       propertyPath: IndexSpriteCurrent
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 191076053, guid: 315050d378b700943aff76df62626fe5, type: 3}
-    - {fileID: 938030179641354323, guid: 315050d378b700943aff76df62626fe5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 315050d378b700943aff76df62626fe5, type: 3}
 --- !u!1001 &1090509163
 PrefabInstance:
@@ -3984,6 +3986,10 @@ PrefabInstance:
     - target: {fileID: 4502754552577599102, guid: 9a753b4cf9da19c449846288a191c361, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559452492478176701, guid: 9a753b4cf9da19c449846288a191c361, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a753b4cf9da19c449846288a191c361, type: 3}
