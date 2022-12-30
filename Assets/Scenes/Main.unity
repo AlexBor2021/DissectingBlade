@@ -5381,7 +5381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418574835, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -83.6
+      value: -83.6001
       objectReference: {fileID: 0}
     - target: {fileID: 418574835, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5601,7 +5601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2124595166193507838, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _price
-      value: 0
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 2124595166193507838, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _weaponPlayer
@@ -5825,7 +5825,7 @@ PrefabInstance:
       objectReference: {fileID: 1595540563}
     - target: {fileID: 3287145420901975978, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _price
-      value: 0
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3287145420901975978, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _weaponPlayer
@@ -6597,7 +6597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297084543736150962, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _price
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 7297084543736150962, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _weaponPlayer
@@ -6686,6 +6686,18 @@ PrefabInstance:
     - target: {fileID: 7856117904305553174, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856117904305553175, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_Color.b
+      value: 0.971756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856117904305553175, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856117904305553175, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856117904954865313, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_IsActive
