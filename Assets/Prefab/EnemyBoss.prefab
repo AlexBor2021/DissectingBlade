@@ -3652,6 +3652,7 @@ MonoBehaviour:
   _pointer: {fileID: 6270477567332837290}
   _health: 100
   _deadVouse: {fileID: 0}
+  _deadEffect: {fileID: 0}
   IsDie: 0
 --- !u!65 &3335236622792346810
 BoxCollider:
@@ -4291,7 +4292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentWeapon: {fileID: 8944163015971493768}
-  _enemyBoss: {fileID: 0}
+  _enemyBoss: {fileID: 7638774459332500942}
   _animator: {fileID: 9044117476568165386}
   _rotationSpeed: 300
 --- !u!135 &3318395179254467378
@@ -4305,8 +4306,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.387679
-  m_Center: {x: -1.01, y: 3.32, z: 0.22964431}
+  m_Radius: 10
+  m_Center: {x: 0.07, y: 4.93, z: 0.22964431}
 --- !u!1 &9044117476722202040
 GameObject:
   m_ObjectHideFlags: 0
