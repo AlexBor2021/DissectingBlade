@@ -5160,7 +5160,7 @@ PrefabInstance:
     - target: {fileID: 3519078004949914019, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _musicFon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1609345724}
     - target: {fileID: 3519078004949914019, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _numberLevel
       value: 5
@@ -5884,6 +5884,11 @@ PrefabInstance:
 --- !u!1 &1609345723 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6368459164364055036, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+  m_PrefabInstance: {fileID: 1609345722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1609345724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1603178800144365822, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
   m_PrefabInstance: {fileID: 1609345722}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1652979719
