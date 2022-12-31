@@ -5576,7 +5576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340142991131148630, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _timesLevelEnd.Array.data[2]
-      value: 25
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4340142991378812544, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_AnchorMax.y

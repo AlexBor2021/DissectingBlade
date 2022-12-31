@@ -19,20 +19,8 @@ public class TimerLelvel : MonoBehaviour
 
     private void Update()
     {
-        if (_isStartTimer)
-        {
-            _dalayTimeForCalculating += Time.deltaTime;
-
-            TimerDrow();
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent<LimbPlayer>(out LimbPlayer limbPlayer))
-        {
-            _isStartTimer = true;
-        }
+        _dalayTimeForCalculating += Time.deltaTime;
+        TimerDrow();
     }
 
     public void StopTimerPlayer()
@@ -45,7 +33,7 @@ public class TimerLelvel : MonoBehaviour
     {
         if (_dalayTime < _secondsIninutes)
         {
-            if (_dalayTime > 10)
+            if (_dalayTime >= 10)
             {
                 _dalayTime += Time.deltaTime;
                 _secondTimer.text = _dalayTime.ToString("f0");
