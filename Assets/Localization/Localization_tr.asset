@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: tr
   m_SharedData: {fileID: 11400000, guid: 334a6e5229313ed43998af2de5229aaf, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 4653769881148456961
   m_TableData:
   - m_Id: 1590863446016
     m_Localized: Oynamak
@@ -181,6 +182,56 @@ MonoBehaviour:
       bak."
     m_Metadata:
       m_Items: []
+  - m_Id: 5062709357428736
+    m_Localized: Authors :\n\n Borisov Alexey\n\n Danil Romanov\n\n In support of
+      the Junior school
+    m_Metadata:
+      m_Items:
+      - rid: 4653769881148456961
+  - m_Id: 5068286217273344
+    m_Localized: "Sakura b\u0131\xE7a\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5068590702772224
+    m_Localized: Patlama Katana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5068827764834304
+    m_Localized: Ay Katana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5069107608797184
+    m_Localized: "Y\u0131ld\u0131r\u0131m M\u0131zra\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5086276665065472
+    m_Localized: Sampai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5086498069790720
+    m_Localized: Jotaro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087264083918848
+    m_Localized: Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087308979748864
+    m_Localized: Hanzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087474424070144
+    m_Localized: Victor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5088103544504320
+    m_Localized: Yakuza
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4653769881148456961
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00c0d9e081fc1100

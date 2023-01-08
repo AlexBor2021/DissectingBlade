@@ -167,6 +167,50 @@ MonoBehaviour:
     m_Key: Dialog2Level10
     m_Metadata:
       m_Items: []
+  - m_Id: 5062709357428736
+    m_Key: AboutText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5068286217273344
+    m_Key: Sakura blade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5068590702772224
+    m_Key: 'Explosion Katana '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5068827764834304
+    m_Key: Moon Katana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5069107608797184
+    m_Key: Lightning Spear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5086276665065472
+    m_Key: Sampai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5086498069790720
+    m_Key: Jotaro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087264083918848
+    m_Key: Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087308979748864
+    m_Key: Hanzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5087474424070144
+    m_Key: Victor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5088103544504320
+    m_Key: Yakuza
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -11,59 +11,75 @@ public class TimerLelvel : MonoBehaviour
     [SerializeField] private Finish _finish;
     
     private int _mins = 0;
-    private float _dalayTime;
-    private float _dalayTimeForCalculating;
+    private float _timeLeft;
     private const int _secondsIninutes = 60;
-    private bool _isStartTimer;
-
+    
+    private void OnEnable()
+    {
+        _timeLeft = _timesLevelEnd[2];
+        _secondTimer.text = _timesLevelEnd[2].ToString();
+    }
 
     private void Update()
     {
-        _dalayTimeForCalculating += Time.deltaTime;
+        _timeLeft -= Time.deltaTime;
         TimerDrow();
     }
 
     public void StopTimerPlayer()
     {
-        _isStartTimer = false;
         _finish.FinishedPlayer(SetStars());
     }
 
+    
     private void TimerDrow()
     {
-        if (_dalayTime < _secondsIninutes)
+        if (_timeLeft > _timesLevelEnd[1])
         {
-            if (_dalayTime >= 10)
-            {
-                _dalayTime += Time.deltaTime;
-                _secondTimer.text = _dalayTime.ToString("f0");
-            }
-            else
-            {
-                _dalayTime += Time.deltaTime;
-                _secondTimer.text = 0 + _dalayTime.ToString("f0");
-            }
+            _minsTimer.color = Color.green;
+            _secondTimer.color = Color.green;
+        }
+        else if (_timeLeft > _timesLevelEnd[0])
+        {
+            _minsTimer.color = Color.yellow;
+            _secondTimer.color = Color.yellow;
+        }
+        else if(_timeLeft > 0)
+        {
+            _minsTimer.color = Color.red;
+            _secondTimer.color = Color.red;
         }
         else
         {
-            _mins++;
-            _minsTimer.text = _mins.ToString();
+            _minsTimer.color = Color.gray;
+            _secondTimer.color = Color.gray;
+        }
+
+        if (_timeLeft > 9.5f)
+        {
+            _secondTimer.text = _timeLeft.ToString("f0");
+        }
+        else if(_timeLeft > 0.5f)
+        {
+            _secondTimer.text = 0 + _timeLeft.ToString("f0");
+        }
+        else
+        {
             _secondTimer.text = "00";
-            _dalayTime = 0;
         }
     }
 
     private int SetStars()
     {
-        if (_dalayTimeForCalculating < _timesLevelEnd[0])
+        if (_timeLeft > _timesLevelEnd[1])
         {
             return 3;
         }
-        else if (_dalayTimeForCalculating < _timesLevelEnd[1])
+        else if (_timeLeft > _timesLevelEnd[0])
         {
             return 2;
         }
-        else if (_dalayTimeForCalculating < _timesLevelEnd[2])
+        else if (_timeLeft > 0)
         {
             return 1;
         }

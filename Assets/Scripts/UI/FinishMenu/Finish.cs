@@ -8,12 +8,15 @@ public class Finish : MonoBehaviour
     [SerializeField] private ContainerEnemy _containerEnemy;
     [SerializeField] private int _revardConst;
 
+    private MovePhysick _movePhysick;
     private int _countStars;
     private int _revard;
     private const string _activatePenalFinish = "ActivatePenalFinish";
 
     public void FinishedPlayer(int countStars)
     {
+        _movePhysick = FindObjectOfType<MovePhysick>();
+        _movePhysick.ISMenu = true;
         Time.timeScale = 0.2f;
         CalculatingStarsAndRevard(countStars);
     }
@@ -22,7 +25,6 @@ public class Finish : MonoBehaviour
     {
         if (countStars == 0)
         {
-            Time.timeScale = 0;
             _countStars = 0;
             _revard = 0;
         }

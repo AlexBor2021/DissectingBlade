@@ -5,15 +5,17 @@ using UnityEngine;
 public class FinishTutorial : MonoBehaviour
 {
     [SerializeField] private FinishIcon _finishIcon;
+    [SerializeField] private Player _player;
+    [SerializeField] private int _damagePlayer;
+    [SerializeField] private int _countBall;
 
-    private int _countBall;
     private int _countStars = 3;
     private int _revard = 10;
 
 
     private void OnEnable()
     {
-        _countBall = transform.childCount;
+        _player.TakeDamage(_damagePlayer);
     }
 
     public void DeleteBall()
