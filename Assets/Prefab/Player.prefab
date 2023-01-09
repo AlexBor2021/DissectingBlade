@@ -1591,10 +1591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15d3933d78aab64b8414630e9c7ff3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
   _arrowRayCAst:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 2112
   _main: {fileID: 4873594796748476148}
   DiractionForPlayer: {x: 0, y: 0}
 --- !u!1 &4993308872607569366

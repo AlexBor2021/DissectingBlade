@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RootMotion.Dynamics;
+using UnityEngine.EventSystems;
 
 public class MovePhysick : MonoBehaviour
 {
@@ -27,18 +28,23 @@ public class MovePhysick : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Time.timeScale = 0.2f;
-                OnRegdoll();
-                _pastTime = _timerForForseDoll;
-                _arrow.gameObject.SetActive(true);
-
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                    Time.timeScale = 0.2f;
+                    OnRegdoll();
+                    _pastTime = _timerForForseDoll;
+                    _arrow.gameObject.SetActive(true);
+                }
             }
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
-                Time.timeScale = 1f;
-                _pastTime = 0;
-                _diraction = _arrow.DiractionForPlayer.normalized;
-                _arrow.gameObject.SetActive(false);
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                        Time.timeScale = 1f;
+                    _pastTime = 0;
+                    _diraction = _arrow.DiractionForPlayer.normalized;
+                    _arrow.gameObject.SetActive(false);
+                }
             }
         }
         else

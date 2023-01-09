@@ -14,6 +14,7 @@ public class FinishIcon : MonoBehaviour
     [SerializeField] private List<Animator> _animatorsStar;
     [SerializeField] private PanelRevard _panelRevard;
     [SerializeField] private GameObject _musicFon;
+    [SerializeField] private GameObject _buttonDoubleRevard;
     [SerializeField] private int _numberLevel;
 
     private int _numberSceneLevelMenu = 2;
@@ -24,6 +25,11 @@ public class FinishIcon : MonoBehaviour
     private void OnEnable()
     {
         _musicFon.SetActive(false);
+       
+        if (_revard == 0)
+        {
+            _buttonDoubleRevard.SetActive(false);
+        }
     }
     
 
