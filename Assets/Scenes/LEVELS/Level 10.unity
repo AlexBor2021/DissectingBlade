@@ -9142,15 +9142,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340142991131148630, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _timesLevelEnd.Array.data[0]
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340142991131148630, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
-      propertyPath: _timesLevelEnd.Array.data[1]
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4340142991131148630, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
+      propertyPath: _timesLevelEnd.Array.data[1]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340142991131148630, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: _timesLevelEnd.Array.data[2]
-      value: 59
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4340142991131148631, guid: 0ce3f01816f188e4689ed24d6aa63737, type: 3}
       propertyPath: m_LocalPosition.x
