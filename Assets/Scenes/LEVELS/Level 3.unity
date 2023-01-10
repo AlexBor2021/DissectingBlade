@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.005
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1.3994557, g: 1.3994557, b: 1.3994557, a: 1}
-  m_AmbientEquatorColor: {r: 0, g: 0.26699018, b: 1, a: 1}
-  m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.9694441, g: 0.9694441, b: 0.9694441, a: 1}
+  m_AmbientEquatorColor: {r: 0.09300464, g: 0.12354929, b: 0.20754719, a: 1}
+  m_AmbientGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5464c15ff9c6ca04cb5790c1773e76fa, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2441c79940171dc43b33badf9fe97828, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4707672, g: 0.55079716, b: 0.6530011, a: 1}
+  m_IndirectSpecularColor: {r: 0.7169396, g: 0.47326988, b: 0.42386478, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3449,8 +3449,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5801887, g: 0.7708379, b: 1, a: 1}
-  m_Intensity: 0.44
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3507,14 +3507,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.4551625, y: -0.24016424, z: 0.09648036, w: 0.85196227}
+  m_LocalRotation: {x: 0.26798674, y: -0.075114466, z: -0.3282278, w: -0.9026668}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 55.276, y: -34.348, z: -5.463}
+  m_LocalEulerAnglesHint: {x: -32.216, y: -2.731, z: -319.247}
 --- !u!1 &719614219
 GameObject:
   m_ObjectHideFlags: 0
