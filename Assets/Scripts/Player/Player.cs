@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Material _diePlayer;
     [SerializeField] private AudioSource _hit;
 
+    private Material _livePlayer;
     private MovePhysick _movePhysick;
     private int _health;
     private int _maxArmor;
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
         {
             _movePhysick.ISMenu = true;
             Time.timeScale = 0.2f;
+            _livePlayer = _skinnedMeshRenderer.material;
             _skinnedMeshRenderer.material = _diePlayer;
             Invoke(nameof(PlayerDead), 1);
         }
@@ -46,10 +48,16 @@ public class Player : MonoBehaviour
 
     public void Heal(int health)
     {
-        if (_health!= _maxHealth)
+        if (_health != _maxHealth)
         {
             _health = Mathf.Clamp(_health + health, 0, _maxHealth);
             HealthChanged?.Invoke(_health, _maxHealth);
+        }
+        else if(_health == _maxHealth)
+        {
+            _health = Mathf.Clamp(_health + health, 0, _maxHealth);
+            HealthChanged?.Invoke(_health, _maxHealth);
+            _skinnedMeshRenderer.material = _livePlayer;
         }
     }
     public void ResurrectionPlayer()

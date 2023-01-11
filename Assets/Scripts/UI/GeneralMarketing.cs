@@ -17,23 +17,24 @@ public class GeneralMarketing : MonoBehaviour
 
     public void ShowInstalateForHP()
     {
-        VideoAd.Show(OffMusicVolume, Revard, OnMusicVolume);
+        //VideoAd.Show(OffMusicVolume, Revard, OnMusicVolume);
         
-        void OffMusicVolume()
-        {
-            Time.timeScale = 0;
-            _audioMixer.SetFloat(_masterSound, -80);
-        }
-        void OnMusicVolume()
-        {
-            Time.timeScale = 1;
-            _audioMixer.SetFloat(_masterSound, 0);
-        }
+        //void OffMusicVolume()
+        //{
+        //    Time.timeScale = 0;
+        //    _audioMixer.SetFloat(_masterSound, -80);
+        //}
+        //void OnMusicVolume()
+        //{
+        //    Time.timeScale = 1;
+        //    _audioMixer.SetFloat(_masterSound, 0);
+        //}
 
-        void Revard()
-        {
-            _player.ResurrectionPlayer();
-        }
+        //void Revard()
+        //{
+        //    _player.ResurrectionPlayer();
+        //}
+        _player.ResurrectionPlayer();
     }
 
     public void ShowInstalateForCoinX2()
